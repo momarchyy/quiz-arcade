@@ -106,7 +106,7 @@ Every page is a client component (`'use client'`).
 ## 7. Shared Logic
 
 - **Database Access:** `lib/db.js` exports `pool` (cached on `globalThis._quizPool`, `connectionLimit: 2`).
-- **Grade Calculation:** `lib/grade.js` exports `computeGrade(percentage)` (`>=90` A+, `>=80` A, `>=70` B, `>=60` C, `>=50` D, `<50` F).
+- **Grade Calculation:** `lib/grade.js` exports `computeGrade(percentage)` (`>=90` S, `>=80` A, `>=70` B, `>=60` C, `>=50` D, `<50` F).
 - **Server Admin Auth:** `lib/adminAuth.js` exports `isAdmin(request)` comparing `x-admin-password` request header to `process.env.ADMIN_PASSWORD`.
 - **Client Admin Fetch:** `lib/adminClient.js` exports `adminFetch(url, options)` attaching `x-admin-password` from `sessionStorage` and redirecting to `/admin/login` on HTTP 401.
 

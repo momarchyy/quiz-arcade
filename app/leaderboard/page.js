@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const ACCENTS = ['accent-yellow', 'accent-blue', 'accent-green', 'accent-pink'];
 
 function gradeClass(grade) {
-  if (grade === 'A+') return 'grade-Aplus';
+  if (grade === 'S' || grade === 'A+') return 'grade-S';
   if (grade === 'A') return 'grade-A';
   if (grade === 'B') return 'grade-B';
   if (grade === 'C') return 'grade-C';

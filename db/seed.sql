@@ -24,7 +24,7 @@ INSERT INTO students (name, email) VALUES
 ('Meena', 'meena@example.com');
 
 INSERT INTO attempts (student_id, quiz_id, score, total_marks, percentage, grade)
-SELECT s.student_id, @q1, 5, 5, 100.00, 'A+' FROM students s WHERE s.email = 'asha@example.com';
+SELECT s.student_id, @q1, 5, 5, 100.00, 'S' FROM students s WHERE s.email = 'asha@example.com';
 INSERT INTO attempts (student_id, quiz_id, score, total_marks, percentage, grade)
 SELECT s.student_id, @q1, 4, 5, 80.00, 'A' FROM students s WHERE s.email = 'ravi@example.com';
 INSERT INTO attempts (student_id, quiz_id, score, total_marks, percentage, grade)

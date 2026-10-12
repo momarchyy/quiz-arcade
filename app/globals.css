@@ -292,7 +292,7 @@ h1, h2, h3, h4 {
   color: var(--on-accent);
 }
 
-.grade-Aplus, .grade-A { background-color: var(--green); }
+.grade-S, .grade-Aplus, .grade-A { background-color: var(--green); }
 .grade-B { background-color: var(--blue); }
 .grade-C { background-color: var(--yellow); }
 .grade-D { background-color: var(--pink); }

@@ -4,7 +4,7 @@ import { useEffect, useState, use } from 'react';
 import Link from 'next/link';
 
 function gradeClass(grade) {
-  if (grade === 'A+') return 'grade-Aplus';
+  if (grade === 'S' || grade === 'A+') return 'grade-S';
   if (grade === 'A') return 'grade-A';
   if (grade === 'B') return 'grade-B';
   if (grade === 'C') return 'grade-C';

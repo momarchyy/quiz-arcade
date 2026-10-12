@@ -22,7 +22,8 @@ Concise navigation reference for AI coding sessions. Read this file first before
 | `package.json` | Scripts (`dev`, `build`, `start`, `db:setup`) and dependencies | Modifying scripts or checking dependencies |
 | `jsconfig.json` | Path alias `@/*` mapped to `./*` | Resolving module import paths |
 | `.env.example` | Template for required environment variables | Checking required env var names |
-| `.gitignore` | Ignores `node_modules`, `.next`, `.env*.local` | Git ignore rules |
+| `.gitignore` | Ignores `node_modules`, `.next`, `.env*.local`, `.vercel` | Git ignore rules |
+| `.github/workflows/deploy.yml` | GitHub Actions CI/CD workflow that auto-deploys to Vercel on every push to `master`/`main` | Modifying CI/CD deployment pipeline |
 | `README.md` | Quick setup instructions | Updating user documentation |
 | `db/schema.sql` | DDL for `quizzes`, `questions`, `students`, `attempts` | Schema changes or inspecting column constraints |
 | `db/seed.sql` | Initial seed data (2 quizzes, 10 questions, 3 students, 5 attempts) | Modifying initial seed records |
